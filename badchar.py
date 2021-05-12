@@ -2,7 +2,8 @@
 import sys
 
 #
-# opsec-infosec -- Bad Character Generator for Python3
+# opinfosec
+# Bad Character Generator for Python3
 # https://github.com/opsec-infosec/BufferOverflow
 #
 
