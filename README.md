@@ -17,8 +17,15 @@ Python3 Fuzzer to enable a buffer overflow
 
 ## BoF Template for OSCP.exe from TryHackMe
 
-Simple BoF templatae for oscp.exe
+Simple BoF templatae for oscp.exe.
+
 Don't forget to update the payload_shell with our own msfvenom generated reverse shell payload
+
+Update the header for each overflow example... ie. OVERFLOW1 ,OVERFLOW2 , etc
+
+```python
+header = "OVERFLOW1 "
+```
 
 ## Eip Test
 
