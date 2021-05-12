@@ -2,7 +2,8 @@ import socket
 import sys
 
 #
-# opsec-infosec -- BoF Template for Overflow1 for TryHackMe oscp.exe
+# opinfosec
+# BoF Template for Overflow1 for TryHackMe oscp.exe
 # https://github.com/opsec-infosec/BufferOverflow
 #
 
