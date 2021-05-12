@@ -2,7 +2,8 @@ import socket
 import sys
 
 #
-# opsec-infosec -- Eip Test Confirmation of Control of EIP
+# opinfosec
+# Eip Test Confirmation of Control of EIP
 # https://github.com/opsec-infosec/BufferOverflow
 #
 
