@@ -3,7 +3,8 @@ import time
 import sys
 
 #
-# opsec-infosec -- Simple Fuzzer for Python3
+# opinfosec
+# Simple Fuzzer for Python3
 # https://github.com/opsec-infosec/BufferOverflow
 #
 
