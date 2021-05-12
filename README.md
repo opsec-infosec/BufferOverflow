@@ -27,7 +27,7 @@ Update the header for each overflow example... ie. OVERFLOW1 ,OVERFLOW2 , etc
 header = "OVERFLOW1 "
 ```
 
-Adjust the extend on the end of payload (this is not necessary, however it keeps the original BoF intact)
+Adjust the extend on the end of payload to reflect the correct payload (this is not necessary, however it keeps the original BoF intact)
 ```python
 extend = "\x90" * (400 - (len(payload_calc) + (len(nop_sled)))
 ```
