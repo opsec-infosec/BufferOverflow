@@ -19,7 +19,7 @@ Python3 Fuzzer to enable a buffer overflow
 
 Simple BoF templatae for oscp.exe.
 
-Don't forget to update the payload_shell with our own msfvenom generated reverse shell payload
+Don't forget to update the payload_shell with your own msfvenom generated reverse shell payload
 
 Update the header for each overflow example... ie. OVERFLOW1 ,OVERFLOW2 , etc
 
