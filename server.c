@@ -23,7 +23,7 @@ int main(void)
     int addrlen = sizeof(address);
     char buffer[4096] = { 0 };
 
-	printf("Copyright 2022 - opsec-infose Cheep Sofwarz Cumpany\n");
+	printf("Copyright 2022 - opsec-infosec Cheep Sofwarz Cumpany\n");
     // Creating socket file descriptor
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
         perror("socket failed");

