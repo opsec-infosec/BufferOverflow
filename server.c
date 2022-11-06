@@ -10,7 +10,6 @@
 
 int buff_copy(char *str) {
 	char copy[1024];
-	char buf[512];
 
     strcpy(copy, str);
 }
