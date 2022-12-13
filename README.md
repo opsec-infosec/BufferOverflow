@@ -42,9 +42,9 @@ This sends every bad character in a buffer overflow, which should be checked in 
 
 ## Eip Test
 
-Verification of Control of EIP register
+Verification of the Control of EIP register
 
-Adjust the filler to enable the overflow and the correct header for the specific overflow program
+Adjust the filler to enable the overflow, the EIP offset is taken from the Pattern Generator offset.
 
 ```python
 filler = "A" * 1036
@@ -66,6 +66,7 @@ Change the payload reference for the extend to caclulate the correct end of the 
 filler = "A" * (1036 - ((len(nop_sled)) + len(payload_shell)))  # Filler 1036 Bytes - nop sled - size of payload
 eip = "\x6f\x9b\x04\x08"    #0x08049b6f  Return Address JMP EAX
 ```
+The NOP sled is used to allow variables to be place on the stack without overwriting the payload.  NOP stands for no-operation... the execution by the CPU does not change the state of the CPU, esentially executing a NULL statement.
 
 ## Server (server.c)
 
