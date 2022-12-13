@@ -1,5 +1,4 @@
-// Server side C/C++ program to demonstrate Socket
-// programming
+// OpsecInfosec Server
 #include <netinet/in.h>
 #include <stdio.h>
 #include <stdlib.h>
