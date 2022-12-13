@@ -5,16 +5,14 @@ Released under GNU GPL v2
 
 This runs on Linux
 
-Don't forget to turn of ASLR if running on linux, this will temporarily disable ASLR
+## A word of caution
+The server.c is exploitable and containes a buffer overflow.  Please don't run the program on any public facing machine.  I should not have to say this, but you never know what some people might do!!  I use this repo for teaching others about the importance of preventing exploitable code.  If you have participated in the presentation and you enjoyed it, please star this repo and let others know about its existence.
+
+## OS Protections
+Don't forget to turn of ASLR if running on linux, this will temporarily disable ASLR.  Don't do this on a production server please!!!
 
 ```
 echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
-```
-
-## Compile
-Compile server.c with the Makefile
-```
-make all
 ```
 
 ## Python Scripts
@@ -90,3 +88,5 @@ Then use a debugger such as Olly or edb to run the server executable and test ou
 3. pattern to determine the EIP offset
 4. confirm the EIP with eip-test
 5. ExPlOiT
+
+\<opsecinfosec\> @  42-AbuDhabi
