@@ -1,9 +1,12 @@
 # BufferOverflow
-Buffer Overflow Python Scripts
-Copyright (C) 2022  Dale Furneaux (opinfosec)
-Released under GNU GPL v2
+***Buffer Overflow Python Scripts***
+
+*Copyright (C) 2022  Dale Furneaux (opinfosec)*
+*Released under GNU GPL v2*
 
 This runs on Linux
+
+#
 
 ## A word of caution
 The server.c is exploitable and containes a buffer overflow.  Please don't run the program on any public facing machine.  I should not have to say this, but you never know what some people might do!!  I use this repo for teaching others about the importance of preventing exploitable code.  If you have participated in the presentation and you enjoyed it, please star this repo and let others know about its existence.
@@ -23,6 +26,14 @@ Don't forget to change the IP address of the server
 s.connect(("172.16.110.135", 1337))
 ```
 
+## Logical progression of a buffer overflow exploit
+The logical progression of tests should be:
+
+1. fuzzer (fuzz)
+2. test for bad characters
+3. pattern to determine the EIP offset
+4. confirm the EIP with eip-test
+5. ExPlOiT
 
 ## Fuzzer
 
@@ -82,12 +93,7 @@ To make the server executable (which runs on linux), use the attached make file 
 make clean && make all
 ```
 
-Then use a debugger such as Olly or edb to run the server executable and test our the python scripts.  The logical progression of tests should be the
+Then use a debugger such as Olly or edb to run the server executable and test out the python scripts.
 
-1. fuzzer (fuzz)
-2. test for bad characters
-3. pattern to determine the EIP offset
-4. confirm the EIP with eip-test
-5. ExPlOiT
 
 \<opsecinfosec\> @  42-AbuDhabi
