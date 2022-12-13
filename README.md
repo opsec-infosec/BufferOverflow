@@ -6,7 +6,6 @@
 
 This runs on Linux
 
-#
 
 ## A word of caution
 The server.c is exploitable and containes a buffer overflow.  Please don't run the program on any public facing machine.  I should not have to say this, but you never know what some people might do!!  I use this repo for teaching others about the importance of preventing exploitable code.  If you have participated in the presentation and you enjoyed it, please star this repo and let others know about its existence.
