@@ -3,7 +3,8 @@ import time
 import sys
 
 #
-# opinfosec
+# Copyright (C) 2022  Dale Furneaux (opinfosec)
+# Released under GNU GPL v2
 # Simple Fuzzer for Python3
 # https://github.com/opsec-infosec/BufferOverflow
 #

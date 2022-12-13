@@ -2,7 +2,8 @@ import socket
 import sys
 
 #
-# opinfosec
+# Copyright (C) 2022  Dale Furneaux (opinfosec)
+# Released under GNU GPL v2
 # Eip Test Confirmation of Control of EIP
 # https://github.com/opsec-infosec/BufferOverflow
 #

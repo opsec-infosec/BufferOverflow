@@ -1,4 +1,7 @@
 // OpsecInfosec Server
+// Copyright (C) 2022  Dale Furneaux (opinfosec)
+// Released under GNU GPL v2
+
 #include <netinet/in.h>
 #include <stdio.h>
 #include <stdlib.h>

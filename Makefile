@@ -1,3 +1,6 @@
+# Copyright (C) 2022  Dale Furneaux (opinfosec)
+# Released under GNU GPL v2
+
 NAME 	= server
 SRCS	= ./server.c
 
